@@ -15,7 +15,7 @@ $container-max-widths: (
     md: 720px,
     lg: 960px,
     xl: 1140px,
-    xxl: 1320px,
+    xxl: 1340px,
 );
 
 $gutters: (
@@ -128,6 +128,10 @@ $gutter-width: 30px;
     @include make-media($breakpoint, $check) {
         .container {
             max-width: $max-width;
+            @if $max-width {
+                padding-left: 0;
+                padding-right: 0;
+            }
         }
 
         @include make-row-columns($infix);
