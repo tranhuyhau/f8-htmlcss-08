@@ -29,7 +29,29 @@
             load('#header', './templates/header.html');
         </script>
 
-        <div>Content</div>
+        <main class="container">
+            <!-- Slideshow -->
+            <section class="slideshow">
+                <div class="slideshow__inner">
+                    <div class="slideshow__item">
+                        <a href="#!" class="slideshow__link">
+                            <picture>
+                                <source
+                                    media="(max-width: 767.98px)"
+                                    srcset="./assets/img/slideshow/slideshow-1-md.png"
+                                />
+                                <img class="slideshow__img" src="./assets/img/slideshow/slideshow-1.png" alt="" />
+                            </picture>
+                        </a>
+                    </div>
+                </div>
+                <div class="slideshow__page">
+                    <span class="slideshow__number">1</span>
+                    <span class="slideshow__slider"></span>
+                    <span class="slideshow__number">5</span>
+                </div>
+            </section>
+        </main>
 
         <footer id="footer" class="footer"></footer>
         <script>
