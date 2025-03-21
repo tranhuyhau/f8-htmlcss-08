@@ -7,7 +7,7 @@
     padding-top: 54px;
     display: none;
 
-    @include abstracts.breakpoint(lg) {
+    @include abstracts.screen(lg) {
         position: initial;
         padding-top: 0;
     }
@@ -32,7 +32,7 @@
             filter: var(--dropdown-arrow-color);
         }
 
-        @include abstracts.breakpoint(lg) {
+        @include abstracts.screen(lg) {
             background: transparent;
             box-shadow: initial;
             border-radius: initial;
@@ -48,7 +48,7 @@
         position: relative;
         height: calc(var(--dropdown-max-height) - var(--dropdown-padding) * 2);
 
-        @include abstracts.breakpoint(lg) {
+        @include abstracts.screen(lg) {
             height: initial;
         }
     }
@@ -61,7 +61,7 @@
     height: inherit;
     border-right: 1px solid var(--dropdown-border-color);
 
-    @include abstracts.breakpoint(lg) {
+    @include abstracts.screen(lg) {
         border-right: initial;
         width: auto;
 
@@ -82,7 +82,7 @@
     height: inherit;
     overflow-y: auto;
 
-    @include abstracts.breakpoint(lg) {
+    @include abstracts.screen(lg) {
         overflow-y: initial;
         grid-template-rows: initial;
     }
@@ -126,7 +126,7 @@
         grid-column-start: 2;
         margin-top: 13px;
 
-        @include abstracts.breakpoint(lg) {
+        @include abstracts.screen(lg) {
             margin-top: 0;
         }
     }
@@ -174,7 +174,7 @@
         height: inherit;
     }
 
-    @include abstracts.breakpoint(lg) {
+    @include abstracts.screen(lg) {
         position: initial;
         padding-left: 0;
         grid-template-columns: repeat(1, 1fr);
