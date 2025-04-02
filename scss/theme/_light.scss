@@ -22,7 +22,15 @@ html {
     --sidebar-bg-color: #fff;
     --sidebar-shadow-color: rgba(200, 200, 200, 0.4);
 
+    //Browse
+    --browse-item-bg-color: #eee;
+    --browse-item-bg-thumb-color: #fff;
+    --browse-item-heading-color: #000;
+
     @include abstracts.screen(md) {
         --header-bg-color: #fff;
+
+        // Browse
+        --browse-item-bg-color: #fff;
     }
 }

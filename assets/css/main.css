@@ -14,10 +14,14 @@ html {
   --dropdown-border-color: #d2d1d6;
   --sidebar-bg-color: #fff;
   --sidebar-shadow-color: rgba(200, 200, 200, 0.4);
+  --browse-item-bg-color: #eee;
+  --browse-item-bg-thumb-color: #fff;
+  --browse-item-heading-color: #000;
 }
 @media screen and (max-width: 767.98px) {
   html {
     --header-bg-color: #fff;
+    --browse-item-bg-color: #fff;
   }
 }
 
@@ -41,6 +45,9 @@ html.dark {
       brightness(110%) contrast(97%);
   --sidebar-bg-color: #292e39;
   --sidebar-shadow-color: rgba(23, 28, 40, 0.4);
+  --browse-item-bg-color: #171c28;
+  --browse-item-bg-thumb-color: #292e39;
+  --browse-item-heading-color: #fff;
 }
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -1540,7 +1547,6 @@ img {
 
 .slideshow {
   position: relative;
-  margin: 40px 0;
 }
 .slideshow__inner {
   display: flex;
@@ -1621,6 +1627,66 @@ img {
 .slideshow__slider::before {
   left: 0;
   translate: -72% -50%;
+}
+
+.browse__list {
+  margin-top: 20px;
+}
+.browse__item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 26px 20px 20px;
+  border-radius: 16px;
+  height: 100%;
+  background: var(--browse-item-bg-color);
+}
+@media screen and (max-width: 1199.98px) {
+  .browse__item {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .browse__item {
+    flex-direction: row;
+    border-radius: 10px;
+  }
+}
+.browse__item-thumb {
+  width: 116px;
+  height: 116px;
+  object-fit: contain;
+  border-radius: 8px;
+  background: var(--browse-item-bg-thumb-color);
+}
+@media screen and (max-width: 767.98px) {
+  .browse__item-thumb {
+    width: 88px;
+    height: 88px;
+  }
+}
+.browse__item-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  line-height: 145.455%;
+  color: var(--browse-item-heading-color);
+}
+@media screen and (max-width: 767.98px) {
+  .browse__item-title {
+    font-size: 1.8rem;
+    line-height: 144.444%;
+  }
+}
+.browse__item-desc {
+  margin-top: 6px;
+  font-size: 1.6rem;
+  line-height: 150%;
+}
+@media screen and (max-width: 767.98px) {
+  .browse__item-desc {
+    font-size: 1.4rem;
+    line-height: 142.857%;
+  }
 }
 
 .navbar__link, .navbar__list, .header__action-btn, .header__action-group, .header__action, .header__inner {
@@ -1812,6 +1878,33 @@ img {
   background: #ccc;
   z-index: 98;
   opacity: 0.5;
+}
+
+.home__container {
+  margin-top: 40px;
+}
+@media screen and (max-width: 767.98px) {
+  .home__container {
+    margin-top: 30px;
+  }
+}
+.home__heading {
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 141.667%;
+}
+.home__browse {
+  --gutter-x: 51px;
+}
+@media screen and (max-width: 991.98px) {
+  .home__browse {
+    --gutter-x: 31px;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .home__browse {
+    --gutter-y: 20px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en" class="">
-    <!-- <html lang="en" class="dark"> -->
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -29,9 +28,9 @@
             load('#header', './templates/header.html');
         </script>
 
-        <main class="container">
+        <main class="container home">
             <!-- Slideshow -->
-            <section class="slideshow">
+            <section class="slideshow home__container">
                 <div class="slideshow__inner">
                     <div class="slideshow__item">
                         <a href="#!" class="slideshow__link">
@@ -49,6 +48,69 @@
                     <span class="slideshow__number">1</span>
                     <span class="slideshow__slider"></span>
                     <span class="slideshow__number">5</span>
+                </div>
+            </section>
+
+            <!-- Browse Categories -->
+            <section class="browse home__container">
+                <div class="browse__inner">
+                    <div class="home__header"><h2 class="home__heading">Browse Categories</h2></div>
+                    <div class="home__browse browse__list">
+                        <div class="row row-cols-3 row-cols-md-1">
+                            <div class="col">
+                                <article class="browse__item">
+                                    <img
+                                        src="./assets/img/category-item/item-1.png"
+                                        alt=""
+                                        class="browse__item-thumb"
+                                    />
+                                    <div class="browse__item-info">
+                                        <h3 class="browse__item-title">$24 - $150</h3>
+                                        <p class="browse__item-desc">New sumatra mandeling coffe blend</p>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="col">
+                                <article class="browse__item">
+                                    <img
+                                        src="./assets/img/category-item/item-2.png"
+                                        alt=""
+                                        class="browse__item-thumb"
+                                    />
+                                    <div class="browse__item-info">
+                                        <h3 class="browse__item-title">$37 - $160</h3>
+                                        <p class="browse__item-desc">Espresso arabica and robusta beans</p>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="col">
+                                <article class="browse__item">
+                                    <img
+                                        src="./assets/img/category-item/item-3.png"
+                                        alt=""
+                                        class="browse__item-thumb"
+                                    />
+                                    <div class="browse__item-info">
+                                        <h3 class="browse__item-title">$32 - $160</h3>
+                                        <p class="browse__item-desc">Lavazza top class whole bean coffee blend</p>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Total LavAzza 1320 -->
+            <section class="lavazza home__container">
+                <div class="lavazza__inner">
+                    <div class="home__header">
+                        <h2 class="home__heading">Total LavAzza 1320</h2>
+                        <button class="btn-filter">
+                            Filter
+                            <img src="./assets/icon/filter.svg" alt="" />
+                        </button>
+                    </div>
                 </div>
             </section>
         </main>
