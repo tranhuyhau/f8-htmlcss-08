@@ -5,6 +5,7 @@ html {
     --icon-color: brightness(0) saturate(100%) invert(9%) sepia(11%) saturate(3251%) hue-rotate(210deg) brightness(92%)
         contrast(96%);
     --body-bg-color: #f6f6f6;
+    --footer-bg-color: var(--header-bg-color);
 
     --header-bg-color: #eee;
     --header-shadow-color: rgba(237, 237, 246, 0.2);
@@ -12,6 +13,10 @@ html {
     --header-action-group-shadow-color: rgba(237, 237, 246, 0.2);
     --header-action-group-separate-color: #ededf6;
     --header-action-avatar-shadow-color: rgba(0, 0, 0, 0.08);
+
+    //btn-like
+    --btn-like-shadow-color: rgba(124, 124, 124, 0.2);
+    --btn-like-bg-color: #fff;
 
     // Dropdown
     --dropdown-bg-color: #fff;
@@ -26,6 +31,19 @@ html {
     --browse-item-bg-color: #eee;
     --browse-item-bg-thumb-color: #fff;
     --browse-item-heading-color: #000;
+
+    //Filter
+    --filter-btn-bg-color: #fff;
+    --filter-btn-color: #6c6c72;
+    //Filter-form
+    --filter-form-bg-color: #fff;
+    --filter-form-shadow-color: rgba(200, 200, 200, 0.4);
+
+    --filter-form-tag-color: #f8f8fb;
+
+    //Lavazza
+    --lavazza-bg-color: #fff;
+    --lavazza-shadow-color: rgba(237, 237, 246, 0.2);
 
     @include abstracts.screen(md) {
         --header-bg-color: #fff;

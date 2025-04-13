@@ -1,10 +1,6 @@
 @use '../abstracts';
 
 .browse {
-    &__list {
-        margin-top: 20px;
-    }
-
     &__item {
         display: flex;
         align-items: center;

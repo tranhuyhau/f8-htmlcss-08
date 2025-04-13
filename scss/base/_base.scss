@@ -18,6 +18,10 @@ body {
 a {
     color: inherit;
     text-decoration: none;
+}
+
+button,
+a {
     -webkit-tap-highlight-color: transparent;
 }
 
@@ -31,7 +35,8 @@ textarea {
     color: inherit;
 }
 
-button {
+button,
+input {
     border: none;
     outline: none;
     background: transparent;
@@ -43,4 +48,11 @@ img {
 
 .icon {
     filter: var(--icon-color);
+}
+
+.line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line-clamp, 2);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }

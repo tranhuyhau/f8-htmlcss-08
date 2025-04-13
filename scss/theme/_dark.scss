@@ -3,6 +3,8 @@ html.dark {
     --icon-color: brightness(0) saturate(100%) invert(100%) sepia(8%) saturate(7490%) hue-rotate(290deg)
         brightness(105%) contrast(115%);
     --body-bg-color: #272b36;
+    --footer-bg-color: var(--header-bg-color);
+    --footer-text-color: #9e9da6;
 
     --header-bg-color: #171c28;
     --header-shadow-color: rgba(0, 0, 0, 0.2);
@@ -10,6 +12,10 @@ html.dark {
     --header-action-group-shadow-color: rgba(0, 0, 0, 0.2);
     --header-action-group-separate-color: #ededf6;
     --header-action-avatar-shadow-color: rgba(0, 0, 0, 0.08);
+
+    //btn-like
+    --btn-like-shadow-color: rgba(124, 124, 124, 0.2);
+    --btn-like-bg-color: #292e39;
 
     // Dropdown
     --dropdown-bg-color: #2f3441;
@@ -28,4 +34,18 @@ html.dark {
     --browse-item-bg-color: #171c28;
     --browse-item-bg-thumb-color: #292e39;
     --browse-item-heading-color: #fff;
+
+    //Filter
+    --filter-btn-bg-color: #171c28;
+    --filter-btn-color: #fff;
+    //Filter-form
+    --filter-form-bg-color: #2a2e39;
+    --filter-form-shadow-color: rgba(0, 0, 0, 0.4);
+    --filter-form-arrow-color: brightness(0) saturate(100%) invert(13%) sepia(2%) saturate(7104%) hue-rotate(187deg)
+        brightness(90%) contrast(83%);
+    --filter-form-tag-color: #171c28;
+
+    //Lavazza
+    --lavazza-bg-color: #171c28;
+    --lavazza-shadow-color: rgba(0, 0, 0, 0.2);
 }

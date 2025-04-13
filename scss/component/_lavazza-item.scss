@@ -1,0 +1,60 @@
+.lavazza {
+    &__item {
+        padding: 16px;
+        height: 100%;
+        border-radius: 20px;
+        box-shadow: 0px 20px 60px 10px var(--lavazza-shadow-color);
+        background: var(--lavazza-bg-color);
+    }
+
+    &__wrap {
+        position: relative;
+        width: 100%;
+        padding-top: 100%;
+    }
+
+    &__img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    &__btn-like {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+
+    &__info {
+        margin-top: 16px;
+    }
+
+    &__heading,
+    &__price,
+    &__score {
+        font-size: 1.6rem;
+        font-weight: 500;
+        line-height: 150%;
+    }
+
+    &__brand {
+        margin: 16px 0;
+
+        font-size: 1.5rem;
+        line-height: 146.667%;
+        color: #9e9da8;
+    }
+
+    &__meta {
+        display: flex;
+        align-items: center;
+    }
+
+    &__star {
+        margin-left: auto;
+        margin-right: 6px;
+    }
+}

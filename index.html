@@ -106,10 +106,567 @@
                 <div class="lavazza__inner">
                     <div class="home__header">
                         <h2 class="home__heading">Total LavAzza 1320</h2>
-                        <button class="btn-filter">
-                            Filter
-                            <img src="./assets/icon/filter.svg" alt="" />
-                        </button>
+                        <div class="filter">
+                            <button class="btn-filter js-toggle" toggle-target="#filter__form">
+                                Filter
+                                <img src="./assets/icon/filter.svg" alt="" class="icon" />
+                            </button>
+                            <section id="filter__form" class="filter__form hide">
+                                <img src="./assets/img/arrow-form-filter.png" alt="" class="filter__arrow" />
+                                <h2 class="filter__heading">Filter</h2>
+                                <div class="filter__wrap">
+                                    <article class="filter__col">
+                                        <h3 class="filter__title">Price</h3>
+                                        <div class="filter__slider"></div>
+                                        <div class="filter__price">
+                                            <div class="filter__price-min">
+                                                <h4 class="filter__price-title">Minimum</h4>
+                                                <input
+                                                    type="text"
+                                                    value="$30.00"
+                                                    class="filter__price-input filter__input"
+                                                />
+                                            </div>
+                                            <div class="filter__price-max">
+                                                <h4 class="filter__price-title">Maximum</h4>
+                                                <input
+                                                    type="text"
+                                                    value="$100.00"
+                                                    class="filter__price-input filter__input"
+                                                />
+                                            </div>
+                                        </div>
+                                    </article>
+                                    <div class="filter__vertical-line"></div>
+                                    <article class="filter__col">
+                                        <h3 class="filter__title">Size/Weight</h3>
+                                        <div class="filter__select">
+                                            <button class="filter__select-btn">
+                                                500g
+                                                <img src="./assets/icon/filter-arrow-down.svg" alt="" class="icon" />
+                                            </button>
+                                            <div class="filter__select-vertical-line"></div>
+                                            <button class="filter__select-btn">
+                                                Gram
+                                                <img src="./assets/icon/filter-arrow-down.svg" alt="" class="icon" />
+                                            </button>
+                                        </div>
+                                        <div class="filter__tags">
+                                            <div class="filter__tag">Small</div>
+                                            <div class="filter__tag">Medium</div>
+                                            <div class="filter__tag">Large</div>
+                                        </div>
+                                    </article>
+                                    <div class="filter__vertical-line"></div>
+                                    <article class="filter__col">
+                                        <h3 class="filter__title">Brand</h3>
+                                        <div class="filter__search">
+                                            <input
+                                                type="text"
+                                                placeholder="Search brand name"
+                                                class="filter__search-input"
+                                            />
+                                            <img src="./assets/icon/search.svg" alt="" class="icon" />
+                                        </div>
+                                        <div class="filter__tags">
+                                            <div class="filter__tag">Lavazza</div>
+                                            <div class="filter__tag">Nescafe</div>
+                                            <div class="filter__tag">Starbucks</div>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="filter__btn">
+                                    <button class="btn btn-text js-toggle" toggle-target="#filter__form">Cancel</button>
+                                    <button class="btn btn-primary js-toggle" toggle-target="#filter__form">
+                                        Show Result
+                                    </button>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                    <div class="home__lavazza lavazza__list">
+                        <div class="row row-cols-4 gy-2 row-cols-lg-2 row-cols-sm-1">
+                            <div class="col">
+                                <article class="lavazza__item">
+                                    <figure class="lavazza__wrap">
+                                        <a href="#!">
+                                            <img
+                                                src="./assets/img/lavazza-item/lavazza-1.png"
+                                                alt=""
+                                                class="lavazza__img"
+                                            />
+                                        </a>
+                                        <button class="btn-like lavazza__btn-like btn-liked">
+                                            <img src="./assets/icon/heart.svg" alt="" class="like icon" />
+                                            <img src="./assets/icon/heart-red.svg" alt="" class="like-red" />
+                                        </button>
+                                    </figure>
+                                    <div class="lavazza__info">
+                                        <h3>
+                                            <a href="#!" class="lavazza__heading line-clamp">
+                                                Coffee Beans - Espresso Arabica and Robusta Beans
+                                            </a>
+                                        </h3>
+                                        <div class="lavazza__brand">Lavazza</div>
+                                        <div class="lavazza__meta">
+                                            <div class="lavazza__price">$47.00</div>
+                                            <img src="./assets/icon/star.svg" alt="" class="lavazza__star" />
+                                            <div class="lavazza__score">4.3</div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="col">
+                                <article class="lavazza__item">
+                                    <figure class="lavazza__wrap">
+                                        <a href="#!">
+                                            <img
+                                                src="./assets/img/lavazza-item/lavazza-2.png"
+                                                alt=""
+                                                class="lavazza__img"
+                                            />
+                                        </a>
+                                        <button class="btn-like lavazza__btn-like">
+                                            <img src="./assets/icon/heart.svg" alt="" class="like icon" />
+                                            <img src="./assets/icon/heart-red.svg" alt="" class="like-red" />
+                                        </button>
+                                    </figure>
+                                    <div class="lavazza__info">
+                                        <h3>
+                                            <a href="#!" class="lavazza__heading line-clamp">
+                                                Lavazza Coffee Blends - Try the Italian Espresso
+                                            </a>
+                                        </h3>
+                                        <div class="lavazza__brand">Lavazza</div>
+                                        <div class="lavazza__meta">
+                                            <div class="lavazza__price">$53.00</div>
+                                            <img src="./assets/icon/star.svg" alt="" class="lavazza__star" />
+                                            <div class="lavazza__score">3.4</div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="col">
+                                <article class="lavazza__item">
+                                    <figure class="lavazza__wrap">
+                                        <a href="#!">
+                                            <img
+                                                src="./assets/img/lavazza-item/lavazza-3.png"
+                                                alt=""
+                                                class="lavazza__img"
+                                            />
+                                        </a>
+                                        <button class="btn-like lavazza__btn-like btn-liked">
+                                            <img src="./assets/icon/heart.svg" alt="" class="like icon" />
+                                            <img src="./assets/icon/heart-red.svg" alt="" class="like-red" />
+                                        </button>
+                                    </figure>
+                                    <div class="lavazza__info">
+                                        <h3>
+                                            <a href="#!" class="lavazza__heading line-clamp">
+                                                Lavazza - Caffè Espresso Black Tin - Ground coffee
+                                            </a>
+                                        </h3>
+                                        <div class="lavazza__brand">welikecoffee</div>
+                                        <div class="lavazza__meta">
+                                            <div class="lavazza__price">$99.99</div>
+                                            <img src="./assets/icon/star.svg" alt="" class="lavazza__star" />
+                                            <div class="lavazza__score">5.0</div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="col">
+                                <article class="lavazza__item">
+                                    <figure class="lavazza__wrap">
+                                        <a href="#!">
+                                            <img
+                                                src="./assets/img/lavazza-item/lavazza-4.png"
+                                                alt=""
+                                                class="lavazza__img"
+                                            />
+                                        </a>
+                                        <button class="btn-like lavazza__btn-like">
+                                            <img src="./assets/icon/heart.svg" alt="" class="like icon" />
+                                            <img src="./assets/icon/heart-red.svg" alt="" class="like-red" />
+                                        </button>
+                                    </figure>
+                                    <div class="lavazza__info">
+                                        <h3>
+                                            <a href="#!" class="lavazza__heading line-clamp">
+                                                Qualità Oro Mountain Grown - Espresso Coffee Beans
+                                            </a>
+                                        </h3>
+                                        <div class="lavazza__brand">Lavazza</div>
+                                        <div class="lavazza__meta">
+                                            <div class="lavazza__price">$38.65</div>
+                                            <img src="./assets/icon/star.svg" alt="" class="lavazza__star" />
+                                            <div class="lavazza__score">4.4</div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="col">
+                                <article class="lavazza__item">
+                                    <figure class="lavazza__wrap">
+                                        <a href="#!">
+                                            <img
+                                                src="./assets/img/lavazza-item/lavazza-1.png"
+                                                alt=""
+                                                class="lavazza__img"
+                                            />
+                                        </a>
+                                        <button class="btn-like lavazza__btn-like btn-liked">
+                                            <img src="./assets/icon/heart.svg" alt="" class="like icon" />
+                                            <img src="./assets/icon/heart-red.svg" alt="" class="like-red" />
+                                        </button>
+                                    </figure>
+                                    <div class="lavazza__info">
+                                        <h3>
+                                            <a href="#!" class="lavazza__heading line-clamp">
+                                                Coffee Beans - Espresso Arabica and Robusta Beans
+                                            </a>
+                                        </h3>
+                                        <div class="lavazza__brand">Lavazza</div>
+                                        <div class="lavazza__meta">
+                                            <div class="lavazza__price">$47.00</div>
+                                            <img src="./assets/icon/star.svg" alt="" class="lavazza__star" />
+                                            <div class="lavazza__score">4.3</div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="col">
+                                <article class="lavazza__item">
+                                    <figure class="lavazza__wrap">
+                                        <a href="#!">
+                                            <img
+                                                src="./assets/img/lavazza-item/lavazza-2.png"
+                                                alt=""
+                                                class="lavazza__img"
+                                            />
+                                        </a>
+                                        <button class="btn-like lavazza__btn-like">
+                                            <img src="./assets/icon/heart.svg" alt="" class="like icon" />
+                                            <img src="./assets/icon/heart-red.svg" alt="" class="like-red" />
+                                        </button>
+                                    </figure>
+                                    <div class="lavazza__info">
+                                        <h3>
+                                            <a href="#!" class="lavazza__heading line-clamp">
+                                                Lavazza Coffee Blends - Try the Italian Espresso
+                                            </a>
+                                        </h3>
+                                        <div class="lavazza__brand">Lavazza</div>
+                                        <div class="lavazza__meta">
+                                            <div class="lavazza__price">$53.00</div>
+                                            <img src="./assets/icon/star.svg" alt="" class="lavazza__star" />
+                                            <div class="lavazza__score">3.4</div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="col">
+                                <article class="lavazza__item">
+                                    <figure class="lavazza__wrap">
+                                        <a href="#!">
+                                            <img
+                                                src="./assets/img/lavazza-item/lavazza-3.png"
+                                                alt=""
+                                                class="lavazza__img"
+                                            />
+                                        </a>
+                                        <button class="btn-like lavazza__btn-like btn-liked">
+                                            <img src="./assets/icon/heart.svg" alt="" class="like icon" />
+                                            <img src="./assets/icon/heart-red.svg" alt="" class="like-red" />
+                                        </button>
+                                    </figure>
+                                    <div class="lavazza__info">
+                                        <h3>
+                                            <a href="#!" class="lavazza__heading line-clamp">
+                                                Lavazza - Caffè Espresso Black Tin - Ground coffee
+                                            </a>
+                                        </h3>
+                                        <div class="lavazza__brand">welikecoffee</div>
+                                        <div class="lavazza__meta">
+                                            <div class="lavazza__price">$99.99</div>
+                                            <img src="./assets/icon/star.svg" alt="" class="lavazza__star" />
+                                            <div class="lavazza__score">5.0</div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="col">
+                                <article class="lavazza__item">
+                                    <figure class="lavazza__wrap">
+                                        <a href="#!">
+                                            <img
+                                                src="./assets/img/lavazza-item/lavazza-4.png"
+                                                alt=""
+                                                class="lavazza__img"
+                                            />
+                                        </a>
+                                        <button class="btn-like lavazza__btn-like">
+                                            <img src="./assets/icon/heart.svg" alt="" class="like icon" />
+                                            <img src="./assets/icon/heart-red.svg" alt="" class="like-red" />
+                                        </button>
+                                    </figure>
+                                    <div class="lavazza__info">
+                                        <h3>
+                                            <a href="#!" class="lavazza__heading line-clamp">
+                                                Qualità Oro Mountain Grown - Espresso Coffee Beans
+                                            </a>
+                                        </h3>
+                                        <div class="lavazza__brand">Lavazza</div>
+                                        <div class="lavazza__meta">
+                                            <div class="lavazza__price">$38.65</div>
+                                            <img src="./assets/icon/star.svg" alt="" class="lavazza__star" />
+                                            <div class="lavazza__score">4.4</div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="col">
+                                <article class="lavazza__item">
+                                    <figure class="lavazza__wrap">
+                                        <a href="#!">
+                                            <img
+                                                src="./assets/img/lavazza-item/lavazza-1.png"
+                                                alt=""
+                                                class="lavazza__img"
+                                            />
+                                        </a>
+                                        <button class="btn-like lavazza__btn-like btn-liked">
+                                            <img src="./assets/icon/heart.svg" alt="" class="like icon" />
+                                            <img src="./assets/icon/heart-red.svg" alt="" class="like-red" />
+                                        </button>
+                                    </figure>
+                                    <div class="lavazza__info">
+                                        <h3>
+                                            <a href="#!" class="lavazza__heading line-clamp">
+                                                Coffee Beans - Espresso Arabica and Robusta Beans
+                                            </a>
+                                        </h3>
+                                        <div class="lavazza__brand">Lavazza</div>
+                                        <div class="lavazza__meta">
+                                            <div class="lavazza__price">$47.00</div>
+                                            <img src="./assets/icon/star.svg" alt="" class="lavazza__star" />
+                                            <div class="lavazza__score">4.3</div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="col">
+                                <article class="lavazza__item">
+                                    <figure class="lavazza__wrap">
+                                        <a href="#!">
+                                            <img
+                                                src="./assets/img/lavazza-item/lavazza-2.png"
+                                                alt=""
+                                                class="lavazza__img"
+                                            />
+                                        </a>
+                                        <button class="btn-like lavazza__btn-like">
+                                            <img src="./assets/icon/heart.svg" alt="" class="like icon" />
+                                            <img src="./assets/icon/heart-red.svg" alt="" class="like-red" />
+                                        </button>
+                                    </figure>
+                                    <div class="lavazza__info">
+                                        <h3>
+                                            <a href="#!" class="lavazza__heading line-clamp">
+                                                Lavazza Coffee Blends - Try the Italian Espresso
+                                            </a>
+                                        </h3>
+                                        <div class="lavazza__brand">Lavazza</div>
+                                        <div class="lavazza__meta">
+                                            <div class="lavazza__price">$53.00</div>
+                                            <img src="./assets/icon/star.svg" alt="" class="lavazza__star" />
+                                            <div class="lavazza__score">3.4</div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="col">
+                                <article class="lavazza__item">
+                                    <figure class="lavazza__wrap">
+                                        <a href="#!">
+                                            <img
+                                                src="./assets/img/lavazza-item/lavazza-3.png"
+                                                alt=""
+                                                class="lavazza__img"
+                                            />
+                                        </a>
+                                        <button class="btn-like lavazza__btn-like btn-liked">
+                                            <img src="./assets/icon/heart.svg" alt="" class="like icon" />
+                                            <img src="./assets/icon/heart-red.svg" alt="" class="like-red" />
+                                        </button>
+                                    </figure>
+                                    <div class="lavazza__info">
+                                        <h3>
+                                            <a href="#!" class="lavazza__heading line-clamp">
+                                                Lavazza - Caffè Espresso Black Tin - Ground coffee
+                                            </a>
+                                        </h3>
+                                        <div class="lavazza__brand">welikecoffee</div>
+                                        <div class="lavazza__meta">
+                                            <div class="lavazza__price">$99.99</div>
+                                            <img src="./assets/icon/star.svg" alt="" class="lavazza__star" />
+                                            <div class="lavazza__score">5.0</div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="col">
+                                <article class="lavazza__item">
+                                    <figure class="lavazza__wrap">
+                                        <a href="#!">
+                                            <img
+                                                src="./assets/img/lavazza-item/lavazza-4.png"
+                                                alt=""
+                                                class="lavazza__img"
+                                            />
+                                        </a>
+                                        <button class="btn-like lavazza__btn-like">
+                                            <img src="./assets/icon/heart.svg" alt="" class="like icon" />
+                                            <img src="./assets/icon/heart-red.svg" alt="" class="like-red" />
+                                        </button>
+                                    </figure>
+                                    <div class="lavazza__info">
+                                        <h3>
+                                            <a href="#!" class="lavazza__heading line-clamp">
+                                                Qualità Oro Mountain Grown - Espresso Coffee Beans
+                                            </a>
+                                        </h3>
+                                        <div class="lavazza__brand">Lavazza</div>
+                                        <div class="lavazza__meta">
+                                            <div class="lavazza__price">$38.65</div>
+                                            <img src="./assets/icon/star.svg" alt="" class="lavazza__star" />
+                                            <div class="lavazza__score">4.4</div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="col">
+                                <article class="lavazza__item">
+                                    <figure class="lavazza__wrap">
+                                        <a href="#!">
+                                            <img
+                                                src="./assets/img/lavazza-item/lavazza-1.png"
+                                                alt=""
+                                                class="lavazza__img"
+                                            />
+                                        </a>
+                                        <button class="btn-like lavazza__btn-like btn-liked">
+                                            <img src="./assets/icon/heart.svg" alt="" class="like icon" />
+                                            <img src="./assets/icon/heart-red.svg" alt="" class="like-red" />
+                                        </button>
+                                    </figure>
+                                    <div class="lavazza__info">
+                                        <h3>
+                                            <a href="#!" class="lavazza__heading line-clamp">
+                                                Coffee Beans - Espresso Arabica and Robusta Beans
+                                            </a>
+                                        </h3>
+                                        <div class="lavazza__brand">Lavazza</div>
+                                        <div class="lavazza__meta">
+                                            <div class="lavazza__price">$47.00</div>
+                                            <img src="./assets/icon/star.svg" alt="" class="lavazza__star" />
+                                            <div class="lavazza__score">4.3</div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="col">
+                                <article class="lavazza__item">
+                                    <figure class="lavazza__wrap">
+                                        <a href="#!">
+                                            <img
+                                                src="./assets/img/lavazza-item/lavazza-2.png"
+                                                alt=""
+                                                class="lavazza__img"
+                                            />
+                                        </a>
+                                        <button class="btn-like lavazza__btn-like">
+                                            <img src="./assets/icon/heart.svg" alt="" class="like icon" />
+                                            <img src="./assets/icon/heart-red.svg" alt="" class="like-red" />
+                                        </button>
+                                    </figure>
+                                    <div class="lavazza__info">
+                                        <h3>
+                                            <a href="#!" class="lavazza__heading line-clamp">
+                                                Lavazza Coffee Blends - Try the Italian Espresso
+                                            </a>
+                                        </h3>
+                                        <div class="lavazza__brand">Lavazza</div>
+                                        <div class="lavazza__meta">
+                                            <div class="lavazza__price">$53.00</div>
+                                            <img src="./assets/icon/star.svg" alt="" class="lavazza__star" />
+                                            <div class="lavazza__score">3.4</div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="col">
+                                <article class="lavazza__item">
+                                    <figure class="lavazza__wrap">
+                                        <a href="#!">
+                                            <img
+                                                src="./assets/img/lavazza-item/lavazza-3.png"
+                                                alt=""
+                                                class="lavazza__img"
+                                            />
+                                        </a>
+                                        <button class="btn-like lavazza__btn-like btn-liked">
+                                            <img src="./assets/icon/heart.svg" alt="" class="like icon" />
+                                            <img src="./assets/icon/heart-red.svg" alt="" class="like-red" />
+                                        </button>
+                                    </figure>
+                                    <div class="lavazza__info">
+                                        <h3>
+                                            <a href="#!" class="lavazza__heading line-clamp">
+                                                Lavazza - Caffè Espresso Black Tin - Ground coffee
+                                            </a>
+                                        </h3>
+                                        <div class="lavazza__brand">welikecoffee</div>
+                                        <div class="lavazza__meta">
+                                            <div class="lavazza__price">$99.99</div>
+                                            <img src="./assets/icon/star.svg" alt="" class="lavazza__star" />
+                                            <div class="lavazza__score">5.0</div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="col">
+                                <article class="lavazza__item">
+                                    <figure class="lavazza__wrap">
+                                        <a href="#!">
+                                            <img
+                                                src="./assets/img/lavazza-item/lavazza-4.png"
+                                                alt=""
+                                                class="lavazza__img"
+                                            />
+                                        </a>
+                                        <button class="btn-like lavazza__btn-like">
+                                            <img src="./assets/icon/heart.svg" alt="" class="like icon" />
+                                            <img src="./assets/icon/heart-red.svg" alt="" class="like-red" />
+                                        </button>
+                                    </figure>
+                                    <div class="lavazza__info">
+                                        <h3>
+                                            <a href="#!" class="lavazza__heading line-clamp">
+                                                Qualità Oro Mountain Grown - Espresso Coffee Beans
+                                            </a>
+                                        </h3>
+                                        <div class="lavazza__brand">Lavazza</div>
+                                        <div class="lavazza__meta">
+                                            <div class="lavazza__price">$38.65</div>
+                                            <img src="./assets/icon/star.svg" alt="" class="lavazza__star" />
+                                            <div class="lavazza__score">4.4</div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
