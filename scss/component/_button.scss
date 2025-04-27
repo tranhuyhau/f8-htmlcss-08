@@ -50,8 +50,10 @@
     color: #1a162e;
     background: #ccc;
 
-    & + & {
-        margin-left: 10px;
+    + .btn {
+        &:not(.btn--no-margin) {
+            margin-left: 20px;
+        }
     }
 
     &-text {

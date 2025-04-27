@@ -23,6 +23,25 @@
         @include abstracts.screen(lg) {
             justify-content: space-between;
         }
+
+        &-logo {
+            @include abstracts.screen(md) {
+                column-gap: 10px;
+            }
+        }
+
+        &-text {
+            @include abstracts.screen(md) {
+                font-size: 1.8rem;
+                line-height: 144.444%;
+            }
+        }
+
+        &-img {
+            @include abstracts.screen(md) {
+                width: 26px;
+            }
+        }
     }
 
     &__avatar {
