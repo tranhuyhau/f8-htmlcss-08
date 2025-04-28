@@ -38,11 +38,14 @@ html {
   --filter-form-tag-color: #f8f8fb;
   --lavazza-bg-color: #fff;
   --lavazza-shadow-color: rgba(237, 237, 246, 0.2);
+  --auth-content-bg-color: #fff;
+  --form-placeholder-color: #d2d1d6;
 }
 @media screen and (max-width: 767.98px) {
   html {
     --header-bg-color: #fff;
     --browse-item-bg-color: #fff;
+    --auth-bg-color: #fff;
   }
 }
 
@@ -82,6 +85,10 @@ html.dark {
   --filter-form-tag-color: #171c28;
   --lavazza-bg-color: #171c28;
   --lavazza-shadow-color: rgba(0, 0, 0, 0.2);
+  --auth-bg-color: #171c28;
+  --auth-color: #b9babe;
+  --auth-content-bg-color: #292e39;
+  --form-placeholder-color: #b9babe;
 }
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -1282,7 +1289,8 @@ a {
 }
 
 button,
-a {
+a,
+label {
   -webkit-tap-highlight-color: transparent;
 }
 
@@ -1409,6 +1417,7 @@ img {
   align-items: center;
   justify-content: center;
   column-gap: 14px;
+  color: var(--text-color) !important;
 }
 .logo__text {
   font-size: 2.2rem;
@@ -2116,7 +2125,7 @@ img {
   }
 }
 .form__input::placeholder {
-  color: #d2d1d6;
+  color: var(--form-placeholder-color);
 }
 .form__input-icon {
   margin-left: 12px;
@@ -2181,6 +2190,9 @@ img {
   font-weight: 500;
   line-height: 144.444%;
   border-radius: 10px;
+}
+.form__btn-gg {
+  color: inherit;
 }
 
 .navbar__link, .navbar__list, .header__action-btn, .header__action-group, .header__action, .header__inner {
@@ -2602,6 +2614,13 @@ img {
   display: flex;
   align-items: center;
   min-height: 100vh;
+  color: var(--auth-color);
+  background: var(--auth-bg-color);
+}
+@supports (-webkit-touch-callout: none) {
+  .auth {
+    min-height: -webkit-fill-available;
+  }
 }
 .auth__intro, .auth__content {
   padding: 0 30px;
@@ -2617,16 +2636,10 @@ img {
 @media screen and (max-width: 767.98px) {
   .auth__intro {
     gap: 0;
-    padding: 80px 0 50px;
   }
 }
 .auth__intro-img {
   max-width: 100%;
-}
-@media screen and (max-width: 767.98px) {
-  .auth__intro-img {
-    margin-top: 150px;
-  }
 }
 .auth__intro-desc {
   text-align: center;
@@ -2647,8 +2660,20 @@ img {
   }
 }
 @media screen and (max-width: 767.98px) {
+  .auth__intro-logo, .auth__intro-btn-dot-arrow {
+    position: absolute;
+    left: 50%;
+    translate: -50%;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .auth__intro-logo {
+    top: 80px;
+  }
+}
+@media screen and (max-width: 767.98px) {
   .auth__intro-btn-dot-arrow {
-    margin-top: 200px;
+    bottom: 50px;
   }
 }
 .auth__content {
@@ -2658,7 +2683,7 @@ img {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  background: #fff;
+  background: var(--auth-content-bg-color);
   transition: translate 0.3s;
 }
 @media screen and (max-width: 767.98px) {
@@ -2689,7 +2714,7 @@ img {
   }
 }
 .auth__desc {
-  max-width: 400px;
+  max-width: 420px;
   margin-top: 10px;
   font-size: 1.5rem;
   font-weight: 500;

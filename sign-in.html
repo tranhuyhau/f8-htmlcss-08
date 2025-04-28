@@ -1,11 +1,116 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Sign-In</title>
+        <title>Sign In</title>
+
+        <!-- Favicon -->
+        <link rel="icon" type="image/png" href="./assets/favicon/favicon-96x96.png" sizes="96x96" />
+        <link rel="icon" type="image/svg+xml" href="./assets/favicon/favicon.svg" />
+        <link rel="shortcut icon" href="./assets/favicon/favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png" />
+        <meta name="apple-mobile-web-app-title" content="Grocery Mart" />
+        <link rel="manifest" href="./assets/favicon/site.webmanifest" />
+
+        <!-- Font -->
+        <link rel="stylesheet" href="./assets/font/stylesheet.css" />
+
+        <!-- Style -->
+        <link rel="stylesheet" href="./assets/css/main.css" />
+
+        <!-- Script -->
+        <script src="./assets/js/scripts.js"></script>
     </head>
     <body>
-        <h1>Sign In</h1>
+        <main class="auth">
+            <div class="auth__intro d-md-none">
+                <img src="./assets/img/auth/intro.svg" alt="" class="auth__intro-img" />
+                <p class="auth__intro-desc">
+                    The best of luxury brand values, high quality products, and innovative services
+                </p>
+            </div>
+            <div id="auth__content" class="auth__content">
+                <div class="auth__inner">
+                    <a href="./" class="logo">
+                        <img src="./assets/icon/logo.svg" alt="grocerymart" class="logo__img" />
+                        <span class="logo__text">grocerymart</span>
+                    </a>
+
+                    <h1 class="auth__heading">Hello Again!</h1>
+                    <p class="auth__desc">
+                        Welcome back to sign in. As a returning customer, you have access to your previously saved all
+                        information.
+                    </p>
+
+                    <form action="./index-login.html" class="form auth__form">
+                        <div class="form__group">
+                            <div class="form__text-input">
+                                <input type="email" name="" id="" class="form__input" placeholder="Email" required />
+                                <img src="./assets/icon/message.svg" alt="" class="form__input-icon" />
+                                <img src="./assets/icon/error.svg" alt="" class="form__input-icon-error" />
+                            </div>
+                            <p class="form__text-error">Email chưa đúng định dạng</p>
+                        </div>
+                        <div class="form__group">
+                            <div class="form__text-input">
+                                <input
+                                    type="password"
+                                    name=""
+                                    id=""
+                                    class="form__input"
+                                    placeholder="Password"
+                                    minlength="6"
+                                    required
+                                />
+                                <img src="./assets/icon/lock.svg" alt="" class="form__input-icon" />
+                                <img src="./assets/icon/error.svg" alt="" class="form__input-icon-error" />
+                            </div>
+                            <p class="form__text-error">Mật khẩu ít nhất 6 ký tự</p>
+                        </div>
+                        <div class="form__group form__group--inline">
+                            <label class="form__checkbox">
+                                <input type="checkbox" name="" id="" hidden />
+                                <span class="form__checkbox--label">Set as default card</span>
+                            </label>
+                            <a href="#!" class="auth__link form__pull-right">Recovery Password</a>
+                        </div>
+                        <div class="form__group form__group--btn">
+                            <a href="./index-login.html" class="btn btn-primary form__btn form__btn-submit">Sign In</a>
+                            <a href="#!" class="btn btn-outline btn--no-margin form__btn form__btn-gg">
+                                <svg
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <g clip-path="url(#clip0_57557_234)">
+                                        <path
+                                            d="M12.2045 11.0183H20.9315C20.9765 11.4041 21 11.8 21 12.205C21 14.9452 19.9977 17.2525 18.2611 18.82C16.7424 20.1942 14.6632 21 12.1841 21C10.978 21.0005 9.78353 20.7681 8.66909 20.316C7.55465 19.864 6.54204 19.2011 5.68912 18.3653C4.83621 17.5296 4.15971 16.5373 3.6983 15.4452C3.23688 14.353 2.9996 13.1825 3 12.0005C2.99946 10.8184 3.23665 9.64776 3.698 8.55554C4.15936 7.46331 4.83583 6.47089 5.68876 5.63501C6.54169 4.79913 7.55435 4.13618 8.66886 3.68405C9.78336 3.23192 10.9779 2.99947 12.1841 3C14.6591 3 16.7383 3.89203 18.3286 5.34434L16.8334 6.80868C15.6491 5.68712 14.0485 5.00457 12.2045 5.00457C11.2644 5.00457 10.3335 5.18604 9.46488 5.53863C8.5963 5.89121 7.80709 6.40801 7.1423 7.0595C6.47752 7.71099 5.95019 8.48443 5.59041 9.33565C5.23063 10.1869 5.04546 11.0992 5.04546 12.0205C5.04546 12.9419 5.23063 13.8542 5.59041 14.7054C5.95019 15.5567 6.47752 16.3301 7.1423 16.9816C7.80709 17.6331 8.5963 18.1499 9.46488 18.5025C10.3335 18.8551 11.2644 19.0365 12.2045 19.0365C15.8107 19.0365 18.4882 16.4226 18.931 13.0228H12.2045V11.0183Z"
+                                            fill="currentColor"
+                                        />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_57557_234">
+                                            <rect width="24" height="24" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                Sign in with Google
+                            </a>
+                        </div>
+                    </form>
+
+                    <p class="auth__text">
+                        Don’t have an account yet?
+                        <a href="./sign-up.html" class="auth__link">Sign Up</a>
+                    </p>
+                </div>
+            </div>
+        </main>
     </body>
+    <script>
+        window.dispatchEvent(new Event('template-loaded'));
+    </script>
 </html>

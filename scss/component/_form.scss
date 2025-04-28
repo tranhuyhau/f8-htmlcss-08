@@ -91,7 +91,7 @@ $error-color: #ed4337;
         }
 
         &::placeholder {
-            color: #d2d1d6;
+            color: var(--form-placeholder-color);
         }
 
         &-icon {
@@ -170,5 +170,9 @@ $error-color: #ed4337;
         font-weight: 500;
         line-height: 144.444%;
         border-radius: 10px;
+
+        &-gg {
+            color: inherit;
+        }
     }
 }

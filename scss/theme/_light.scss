@@ -45,10 +45,19 @@ html {
     --lavazza-bg-color: #fff;
     --lavazza-shadow-color: rgba(237, 237, 246, 0.2);
 
+    //Auth
+    --auth-content-bg-color: #fff;
+
+    //Form
+    --form-placeholder-color: #d2d1d6;
+
     @include abstracts.screen(md) {
         --header-bg-color: #fff;
 
         // Browse
         --browse-item-bg-color: #fff;
+
+        // Auth
+        --auth-bg-color: #fff;
     }
 }
